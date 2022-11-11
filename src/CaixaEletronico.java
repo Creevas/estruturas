@@ -2,15 +2,12 @@ public class CaixaEletronico {
 
     public static void main(String[] args) {
 
-        int nota = 6;
+        double saldo = 25;
+        double valorSolicitado = 17.0;
 
-        if(nota >= 7)
-            System.out.println("Aprovado");
+        if(valorSolicitado < saldo)
+            saldo = saldo - valorSolicitado;
 
-        else
-            System.out.println("Reprovado");
-
-
-
+        System.out.println(saldo);
     }
 }
